@@ -141,3 +141,50 @@ fibonacci(1000) */
     return str === revese;
 }
 console.log(palindromo('ovo')) */
+
+
+/* var lista = [10,3,6,9,2,4,5,7,1,8];
+
+function ordenacao(l){
+    return l.sort((a,b) => a-b);
+}
+
+console.log(ordenacao(lista)); */
+
+
+/* function potenciacao(a,b){
+    return Math.pow(a,b)
+}
+var num1 = Number(prompt())
+var num2 = Number(prompt())
+
+console.log(potenciacao(num1,num2)) */
+
+
+/* l = [1,2,3,4,5,6,7,8,9,10]
+function minMax(l){
+    return [Math.min(...l), Math.max(...l)]
+}
+
+console.log(minMax (l)) */
+
+
+function calculador(){
+    let valor1 = Number(document.querySelector('#Valor1').value)
+    let valor2 = Number(document.querySelector('#Valor2').value)
+    let operador = document.querySelector('#operador').value
+    switch(operador){
+        case '+':
+            Resultado.textContent = `${valor1 + valor2}`
+            break
+        case '-':
+            Resultado.textContent = `${valor1 - valor2}`
+            break
+        case '/':
+            Resultado.textContent = `${valor1 / valor2}`
+            break
+        case '*':
+            Resultado.textContent = `${valor1 * valor2}`
+            break
+    }
+}
