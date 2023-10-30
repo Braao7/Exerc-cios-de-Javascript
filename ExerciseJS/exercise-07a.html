@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 07a</title>
+</head>
+<body>
+    <h3>Nome</h3> 
+    <input type="text" id="name"> <br>
+
+    <h3>Sobrenome</h3>
+    <input type="text" id="surname"> <br> <br>
+
+    <button id="button">Saudacao</button>
+
+    <script>
+        document.getElementById('button').addEventListener('click', function () {
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+
+            alert("Olá " + name + " " + surname);
+        });
+    </script>
+</body>
+</html>
