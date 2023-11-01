@@ -16,11 +16,19 @@
 
     <script>
         let counter = cpf.textContent.length;
+        let p = document.getElementById('p')
         document.getElementById("cpf").addEventListener("input", function () {
-            document.getElementById('p').textContent = this.value;
-            for(let i = 0; i <= counter; i++){
-                if
+            let pontuado = document.getElementById('p').textContent = this.value;
+            
+            if (pontuado.length == 3 || pontuado.length > 3) {
+                p.textContent += "."
+
+            }if(pontuado.length >= 7) {
+                document.getElementById('p').innerText += "."
+            }if(pontuado.length >= 10){
+                document.getElementById('p').innerText += "-"
             }
+
         })
 
     </script>
